@@ -1,13 +1,13 @@
 TITLE = 'Uncrate'
 ICON = 'icon-default.jpg'
-UNCRATE_URL = 'http://uncrate.com/tv/'
+UNCRATE_URL = 'https://uncrate.com/tv/'
 
 ###################################################################################################
 def Start():
 
 	ObjectContainer.title1 = TITLE
 	HTTP.CacheTime = 300
-	HTTP.Headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36'
+	HTTP.Headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:59.0) Gecko/20100101 Firefox/59.0'
 
 ###################################################################################################
 @handler('/video/uncrate', TITLE, thumb=ICON)
